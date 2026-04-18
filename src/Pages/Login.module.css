@@ -1,0 +1,130 @@
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 32px;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  background-color: #1f1f1f;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #e5e5e5;
+}
+
+.subtitle {
+  color: #a0a0a0;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 13px;
+  color: #a0a0a0;
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+  background-color: #141414;
+  color: #e5e5e5;
+  transition: all 0.2s ease;
+}
+
+.input::placeholder {
+  color: #777;
+}
+
+.input:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 1px #e50914;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 13px;
+  color: #a0a0a0;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: color 0.2s;
+}
+
+.forgot:hover {
+  color: #e50914;
+}
+
+.btnPrimary {
+  width: 100%;
+  padding: 11px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 16px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #ff1f1f;
+  transform: scale(1.02);
+}
+
+.divider {
+  text-align: center;
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.btnGoogle {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #141414;
+  color: #e5e5e5;
+  margin-bottom: 20px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.btnGoogle:hover {
+  background-color: #1f1f1f;
+  border-color: #444;
+}
+
+.signupText {
+  text-align: center;
+  font-size: 13px;
+  color: #a0a0a0;
+}
+
+.signupLink {
+  color: #e50914;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.signupLink:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,473 @@
+/* Page */
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #111 0%, #000 80%);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 6px;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  color: #8a8a8a;
+  font-size: 0.9rem;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.filterBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border: 1px solid #2a2a2a;
+  border-radius: 999px;
+  background: #1a1a1a;
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filterBtn:hover {
+  border-color: #e50914;
+  color: #fff;
+  background: #262626;
+}
+
+.filterActive {
+  background: linear-gradient(135deg, #e50914, #ff2a2a);
+  border: none;
+  color: #fff ;
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+}
+
+.filterCount {
+  background: #2a2a2a;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  min-width: 22px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterActive .filterCount {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/*  Empty State */
+.empty {
+  text-align: center;
+  padding: 100px 0;
+  color: #aaa;
+  animation: fadeIn 0.6s ease-in-out;
+}
+.emptyImage {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  opacity: 0.7;      
+  filter: grayscale(0); 
+  margin-bottom: 16px;
+}
+
+.emptyLink {
+  margin-top: 14px;
+  display: inline-block;
+  background: #e50914;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+.emptyLink:hover {
+  background: #ff1f1f;
+  transform: translateY(-2px);
+}
+
+/*  Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+/* Card  */
+.card {
+  background: linear-gradient(145deg, #1a1a1a, #111);
+  border: 1px solid #262626;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+  cursor: grab;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.9);
+  border-color: #3a3a3a;
+}
+
+.cardWatched {
+  opacity: 0.6;
+}
+
+.dragging {
+  opacity: 0.4;
+  transform: scale(0.97);
+}
+
+/* Poster  */
+.posterWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .poster {
+  transform: scale(1.08);
+}
+
+.watchedBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #22c55e;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.dragHandle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.1rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.card:hover .dragHandle {
+  opacity: 1;
+}
+
+/* Info */
+.info {
+  padding: 14px 14px 16px;
+}
+
+.movieTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e5e5e5;
+  margin: 0 0 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #a0a0a0;
+  margin-bottom: 10px;
+}
+
+/* Stars */
+.userRating {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+
+.star {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  line-height: 1;
+}
+
+.star:hover,
+.starFilled {
+  color: #f5c518;
+  text-shadow: 0 0 6px rgba(245, 197, 24, 0.6);
+}
+
+.star:hover {
+  transform: scale(1.25) rotate(-5deg);
+}
+
+/* Note Preview */
+.notePreview {
+  font-size: 0.78rem;
+  color: #888;
+  margin-bottom: 10px;
+  font-style: italic;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/*  Action Buttons Grid */
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Mark Watched  */
+.btnWatch {
+  grid-column: 1 / -1;
+  background: #1e1e1e;
+  color: #c0c0c0;
+  border: 1px solid #333;
+}
+
+.btnWatch:hover {
+  background: #2a2a2a;
+  color: #fff;
+  border-color: #555;
+}
+
+/* Watched done state  */
+.btnWatchDone {
+  background: #0d2e1a ;
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.3) ;
+}
+
+.btnWatchDone:hover {
+  background: #122e1c ;
+}
+
+/* Note */
+.btnNote {
+  background: #1a1a1a;
+  color: #a0a0a0;
+  border: 1px solid #2e2e2e;
+}
+
+.btnNote:hover {
+  background: #242424;
+  color: #e5e5e5;
+  border-color: #3e3e3e;
+}
+
+/* Favorite  */
+.btnFav {
+  background: #1a1a1a;
+  color: #a0a0a0;
+  border: 1px solid #2e2e2e;
+}
+
+.btnFav:hover {
+  background: #1e1215;
+  color: #ff4d6d;
+  border-color: rgba(255, 77, 109, 0.35);
+}
+
+/* Favorite active */
+.btnFavActive {
+  background: #1e0e14 ;
+  color: #ff4d6d ;
+  border: 1px solid rgba(255, 77, 109, 0.35) ;
+}
+
+.btnFavActive:hover {
+  background: #261018 ;
+}
+
+/* Remove  */
+.btnRemove {
+  grid-column: 1 / -1;
+  background: #1a1a1a;
+  color: #555;
+  border: 1px solid #2a2a2a;
+}
+
+.btnRemove:hover {
+  background: #1e1010;
+  color: #ff4d4f;
+  border-color: rgba(255, 77, 79, 0.3);
+}
+
+/* ── Modal Overlay ── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: linear-gradient(145deg, #1c1c1c, #111);
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 28px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.9);
+  animation: fadeIn 0.3s ease;
+}
+
+.modalTitle {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.modalMovie {
+  color: #777;
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+
+.textarea {
+  width: 100%;
+  border: 1px solid #2a2a2a;
+  background: #0e0e0e;
+  color: #e5e5e5;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.textarea:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.2);
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.btnSave {
+  background: linear-gradient(135deg, #e50914, #ff2a2a);
+  color: #fff;
+  padding: 9px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.25s ease;
+}
+
+.btnSave:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+}
+
+.btnCancel {
+  background: #222;
+  color: #a0a0a0;
+  padding: 9px 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.25s ease;
+}
+
+.btnCancel:hover {
+  background: #2e2e2e;
+  color: #e5e5e5;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,346 @@
+/* PAGE  */
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: radial-gradient(circle at top, #111 0%, #000 80%);
+  min-height: 100vh;
+}
+
+/* PROFILE CARD  */
+.profileCard {
+  background: linear-gradient(145deg, #1a1a1a, #111);
+  border-radius: 20px;
+  border: 1px solid #2a2a2a;
+  padding: 28px;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+  transition: 0.3s ease;
+}
+
+.profileCard:hover {
+  transform: translateY(-4px);
+}
+
+/*  AVATAR  */
+.avatarWrap {
+  position: relative;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #e50914;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatarInitials {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e50914, #ff2a2a);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.avatarWrap:hover .avatarOverlay {
+  opacity: 1;
+}
+
+/*  USER INFO  */
+.userName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.userEmail {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* INPUTS */
+.input {
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  color: #e5e5e5;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin: 6px 0;
+  width: 220px;
+  margin-right: 3px;
+}
+
+.input:focus {
+  border-color: #e50914;
+  outline: none;
+}
+
+/* BUTTONS  */
+.btnEdit {
+  background: #2a2a2a;
+  color: #ddd;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btnEdit:hover {
+  background: #333;
+}
+
+.btnSave {
+  background: linear-gradient(135deg, #e50914, #ff2a2a);
+  color: #fff;
+}
+
+.btnCancel {
+  background: #2a2a2a;
+  color: #ccc;
+}
+
+.btnSave,
+.btnCancel {
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+/* ACCOUNT ACTIONS  */
+.accountActions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.logoutBtn {
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background: #dc2626;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* STATS GRID */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.statCard {
+  background: linear-gradient(145deg, #1a1a1a, #111);
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid #2a2a2a;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  transition: 0.2s;
+}
+
+.statCard:hover {
+  transform: translateY(-3px);
+  background: #222;
+}
+
+.statCard span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.statCard p {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/*  SECTION */
+.section {
+  background: linear-gradient(145deg, #1a1a1a, #111);
+  border-radius: 20px;
+  border: 1px solid #2a2a2a;
+  padding: 24px;
+}
+
+.section h3 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+/*  FAV GRID */
+.favGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 18px;
+}
+
+/*FAV CARD  */
+.favCard {
+  transition: 0.25s;
+}
+
+.favCard:hover {
+  transform: translateY(-6px);
+}
+
+.favPoster {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* STAR RATING */
+.favRating {
+  text-align: center;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #f5c518;
+}
+
+/* TITLE */
+.favTitle {
+  color: #e5e5e5;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* EMPTY */
+.empty {
+  text-align: center;
+  color: #888;
+}
+
+/* Overlay (blur background) */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Modal Box */
+.confirmBox {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 25px 20px;
+  border-radius: 16px;
+  text-align: center;
+  color: #fff;
+  width: 320px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  animation: popIn 0.25s ease;
+}
+
+/* Title */
+.confirmBox h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+/* Buttons container */
+.confirmActions {
+  display: flex;
+  gap: 10px;
+}
+
+/* YES button */
+.btnConfirm {
+  flex: 1;
+  background: linear-gradient(135deg, #ff4d6d, #ff1e56);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btnConfirm:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 77, 109, 0.6);
+}
+
+/* CANCEL button */
+.btnCancel {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ddd;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btnCancel:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+/* Animation */
+@keyframes popIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,61 @@
+.hero {
+  padding: 40px 24px 20px;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #e5e5e5;
+  letter-spacing: 0.5px;
+}
+
+.searchWrap {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  background-color: #1f1f1f;
+  color: #e5e5e5;
+  transition: all 0.2s ease;
+}
+
+/* Placeholder text */
+.searchInput::placeholder {
+  color: #888;
+}
+
+.searchInput:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 1px #e50914;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.message {
+  text-align: center;
+  color: #a0a0a0;
+  padding: 40px;
+  font-size: 14px;
+}
+
+.error {
+  text-align: center;
+  color: #ff4d4f;
+  padding: 40px;
+  font-size: 14px;
+}
