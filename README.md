@@ -76,7 +76,7 @@ src/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/cinetrack.git
+git clone https://github.com/PreethiLokesh/cinetrack.git
 cd cinetrack
 ```
 
@@ -129,7 +129,7 @@ This project is licensed under the MIT License.
 - TMDB API for movie data
 - React ecosystem for amazing tools
 
---
+---
 
 ### Author
 Built with ❤️ by Preethi Lokesh
