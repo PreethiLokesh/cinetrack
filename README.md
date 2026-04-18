@@ -137,9 +137,9 @@ cinetrack/
 |---|---|
 | ![Login](screenshots/login.png) | ![Signup](screenshots/signup.png) |
 
-| Error Page | |
-|---|---|
-| ![Error Page](screenshots/errorPage.png) | |
+| Error Page |
+|---|
+| <img src="screenshots/errorPage.png" width="400"/> |
 
 ---
 
