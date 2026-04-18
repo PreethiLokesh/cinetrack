@@ -139,7 +139,7 @@ cinetrack/
 
 | Error Page |
 |---|
-| <img src="screenshots/errorPage.png" width="400"/> |
+| <img src="screenshots/errorPage.png" width="500"/> |
 
 ---
 
