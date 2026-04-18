@@ -68,6 +68,7 @@ src/
 │   └── Error.jsx
 ├── App.jsx
 └── main.jsx
+---
 
 ## Getting Started
 
@@ -96,35 +97,7 @@ Open in browser:
 
 http://localhost:5173
 
-##  Screenshots
-
-### Main Pages
-| Home | Movie Details |
-| :---: | :---: |
-|![Home](https://github.com/PreethiLokesh/cinetrack/blob/main/screenshots/home.png?raw=true) | ![Movie Details](./screenshots/movieDetails.png) |
-
 ---
-
-### Authentication Pages
-| Login | Signup |
-| :---: | :---: |
-| ![Login](./screenshots/login.png) | ![Signup](./screenshots/signup.png) |
-
----
-
-### User Features
-| My List | Profile |
-| :---: | :---: |
-| ![My List](./screenshots/myList.png) | ![Profile](./screenshots/profile.png) |
-
----
-
-### Error Page
-
-| Error Page |
-|------------|
-| ![Error Page](./screenshots/errorPage.png) |
-
 	
 ### Note
 This project uses localStorage for authentication and data persistence.
