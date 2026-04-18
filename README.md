@@ -49,7 +49,7 @@ CineTrack is a modern React-based movie watchlist application that helps users d
 
 ## Project Structure
 
-
+```bash
 src/
 ├── components/
 │   ├── Header.jsx
@@ -68,6 +68,7 @@ src/
 │   └── Error.jsx
 ├── App.jsx
 └── main.jsx
+```
 
 
 ## Getting Started
@@ -79,12 +80,12 @@ git clone https://github.com/YOUR_USERNAME/cinetrack.git
 cd cinetrack
 ```
 
-###2️⃣ Install dependencies
+### 2️⃣ Install dependencies
 ```bash
 npm install
 ```
 
-###3️⃣ Setup environment variables
+### 3️⃣ Setup environment variables
 
 Create a .env file in the root directory:
 
@@ -93,7 +94,7 @@ VITE_TMDB_API_KEY=your_api_key_here
 Get API key from:
 👉 https://www.themoviedb.org/settings/api
 
-###4️⃣ Run the project
+### 4️⃣ Run the project
 ```bash
 npm run dev
 ```
