@@ -80,7 +80,7 @@ Create a `.env` file in the root directory:
 VITE_TMDB_API_KEY=your_api_key_here
 ```
 
-> Get your free API key at 👉 https://www.themoviedb.org/settings/api
+> Get your free API key at  https://www.themoviedb.org/settings/api
 
 ### 4. Start the development server
 
@@ -155,20 +155,20 @@ cinetrack/
 
 ---
 
-## ⚠️ Notes
+##  Notes
 
 - This project uses `localStorage` for authentication and data persistence — no backend is involved.
 - It is intended for **learning and demo purposes** only and is not production-ready.
   
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - [TMDB](https://www.themoviedb.org/) for the comprehensive movie database and API
 - The React ecosystem for excellent developer tooling
