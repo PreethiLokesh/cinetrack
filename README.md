@@ -101,7 +101,7 @@ http://localhost:5173
 ### Main Pages
 | Home | Movie Details |
 | :---: | :---: |
-| ![Home](./screenshots/home.png) | ![Movie Details](./screenshots/movieDetails.png) |
+|![Home](https://github.com/PreethiLokesh/cinetrack/blob/main/screenshots/home.png?raw=true) | ![Movie Details](./screenshots/movieDetails.png) |
 
 ---
 
