@@ -10,41 +10,35 @@
 
 **A modern movie watchlist app — discover, track, rate, and organise your films.**
 
-[Features](#-features) · [Tech Stack](#-tech-stack) · [Getting Started](#-getting-started) · [Project Structure](#-project-structure) · [Screenshots](#-screenshots) · [Future Improvements](#-future-improvements) · [Contributing](#-contributing)
-
+[Features](#-features) · [Tech Stack](#-tech-stack) · [Getting Started](#-getting-started) · [Project Structure](#-project-structure) · [Screenshots](#-screenshots) · [Future Improvements](#-future-improvements) 
 </div>
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔍 Movie Discovery
+###  Movie Discovery
 - Browse popular and trending movies powered by the TMDB API
 - Search movies instantly by title
 
-### 📋 Watchlist Management
+###  Watchlist Management
 - Add and remove movies from your personal watchlist
 - Toggle movies between watched and unwatched
 - Mark favourites and filter them in a dedicated view
 
-### ⭐ Personalisation
+###  Personalisation
 - Rate movies with a 5-star system
 - Attach personal notes to any movie
 - View at-a-glance stats: total saved, watched count, average rating, and top genre
 
-### 👤 User System
+###  User System
 - Sign up and log in with a simple auth flow
 - Persistent sessions via `localStorage`
 - Profile page with a generated initials avatar
 
-### 🎨 UI / UX
-- Clean dark-themed interface
-- Fully responsive across desktop, tablet, and mobile
-- Custom 404 error page
-
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Category | Technology |
 |---|---|
@@ -58,7 +52,7 @@
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -98,7 +92,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 cinetrack/
@@ -129,7 +123,7 @@ cinetrack/
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 | Home | Movie Details |
 |---|---|
@@ -149,7 +143,7 @@ cinetrack/
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - [ ] Backend authentication (Firebase or Node.js + JWT)
 - [ ] Cloud database for persistent watchlist storage
@@ -161,26 +155,11 @@ cinetrack/
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how to get started:
-
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Make your changes and commit: `git commit -m "feat: add your feature"`
-4. Push to your fork: `git push origin feature/your-feature-name`
-5. Open a Pull Request
-
-Please keep PRs focused and descriptive. For major changes, open an issue first to discuss.
-
----
-
 ## ⚠️ Notes
 
 - This project uses `localStorage` for authentication and data persistence — no backend is involved.
 - It is intended for **learning and demo purposes** only and is not production-ready.
-- Your TMDB API key should never be committed to version control. Make sure `.env` is listed in `.gitignore`.
-
+  
 ---
 
 ## 📜 License
