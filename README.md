@@ -101,21 +101,21 @@ http://localhost:5173
 ### Main Pages
 | Home | Movie Details |
 | :---: | :---: |
-| ![Home](screenshots/home.png) | ![Movie Details](screenshots/movieDetails.png) |
+| ![Home](./screenshots/home.png) | ![Movie Details](./screenshots/movieDetails.png) |
 
 ---
 
 ### Authentication Pages
 | Login | Signup |
 | :---: | :---: |
-| ![Login](screenshots/login.png) | ![Signup](screenshots/signup.png) |
+| ![Login](./screenshots/login.png) | ![Signup](./screenshots/signup.png) |
 
 ---
 
 ### User Features
 | My List | Profile |
 | :---: | :---: |
-| ![My List](screenshots/myList.png) | ![Profile](screenshots/profile.png) |
+| ![My List](./screenshots/myList.png) | ![Profile](./screenshots/profile.png) |
 
 ---
 
@@ -123,7 +123,7 @@ http://localhost:5173
 
 | Error Page |
 |------------|
-| ![Error Page](screenshots/errorPage.png) |
+| ![Error Page](./screenshots/errorPage.png) |
 
 	
 ### Note
