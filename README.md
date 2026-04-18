@@ -10,7 +10,7 @@
 
 **A modern movie watchlist app — discover, track, rate, and organise your films.**
 
-[Features](#-features) · [Tech Stack](#-tech-stack) · [Getting Started](#-getting-started) · [Project Structure](#-project-structure) · [Roadmap](#-roadmap) · [Contributing](#-contributing)
+[Features](#-features) · [Tech Stack](#-tech-stack) · [Getting Started](#-getting-started) · [Project Structure](#-project-structure) · [Screenshots](#-screenshots) · [Future Improvements](#-future-improvements) · [Contributing](#-contributing)
 
 </div>
 
@@ -129,7 +129,27 @@ cinetrack/
 
 ---
 
-## 🗺 Roadmap
+## 📸 Screenshots
+
+| Home | Movie Details |
+|---|---|
+| ![Home](screenshots/home.png) | ![Movie Details](screenshots/movieDetails.png) |
+
+| My List | Profile |
+|---|---|
+| ![My List](screenshots/myList.png) | ![Profile](screenshots/profile.png) |
+
+| Login | Signup |
+|---|---|
+| ![Login](screenshots/login.png) | ![Signup](screenshots/signup.png) |
+
+| Error Page |
+|---|
+| ![Error Page](screenshots/errorPage.png) |
+
+---
+
+## 🔮 Future Improvements
 
 - [ ] Backend authentication (Firebase or Node.js + JWT)
 - [ ] Cloud database for persistent watchlist storage
