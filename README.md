@@ -112,11 +112,11 @@ It is intended for learning and demo purposes only.
 ---
 
 ### Future Improvements
--Backend authentication (Firebase / Node.js)
--Cloud database for watchlist storage
--Trailer integration (YouTube API)
--Recommendation system
--Social sharing of watchlists
+- Backend authentication (Firebase / Node.js)
+- Cloud database for watchlist storage
+- Trailer integration (YouTube API)
+- Recommendation system
+- Social sharing of watchlists
 
 ---
 
@@ -126,8 +126,8 @@ This project is licensed under the MIT License.
 ---
 
 ### Acknowledgements
--TMDB API for movie data
--React ecosystem for amazing tools
+- TMDB API for movie data
+- React ecosystem for amazing tools
 
 --
 
